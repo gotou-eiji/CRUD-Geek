@@ -32,8 +32,8 @@ namespace Geek
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.lblCliente = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblVenda = new System.Windows.Forms.Label();
+            this.lblSair = new System.Windows.Forms.Label();
             this.mspGeek = new System.Windows.Forms.MenuStrip();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,26 +72,27 @@ namespace Geek
             this.label2.Size = new System.Drawing.Size(62, 16);
             this.label2.TabIndex = 5;
             this.label2.Text = "Produto";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // lblVenda
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(698, 354);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 16);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Venda";
+            this.lblVenda.AutoSize = true;
+            this.lblVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVenda.Location = new System.Drawing.Point(698, 354);
+            this.lblVenda.Name = "lblVenda";
+            this.lblVenda.Size = new System.Drawing.Size(53, 16);
+            this.lblVenda.TabIndex = 6;
+            this.lblVenda.Text = "Venda";
             // 
-            // label4
+            // lblSair
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(984, 354);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 16);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Sair";
+            this.lblSair.AutoSize = true;
+            this.lblSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSair.Location = new System.Drawing.Point(984, 354);
+            this.lblSair.Name = "lblSair";
+            this.lblSair.Size = new System.Drawing.Size(36, 16);
+            this.lblSair.TabIndex = 7;
+            this.lblSair.Text = "Sair";
             // 
             // mspGeek
             // 
@@ -131,14 +132,14 @@ namespace Geek
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // produtoToolStripMenuItem
             // 
             this.produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
-            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.produtoToolStripMenuItem.Text = "Produto";
             // 
             // pedidoVendaToolStripMenuItem
@@ -176,6 +177,7 @@ namespace Geek
             this.pbxProduto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxProduto.TabIndex = 1;
             this.pbxProduto.TabStop = false;
+            this.pbxProduto.Click += new System.EventHandler(this.pbxProduto_Click);
             // 
             // pbxCliente
             // 
@@ -194,8 +196,8 @@ namespace Geek
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1185, 510);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblSair);
+            this.Controls.Add(this.lblVenda);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.pbxSair);
@@ -230,8 +232,8 @@ namespace Geek
         private System.Windows.Forms.PictureBox pbxSair;
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblVenda;
+        private System.Windows.Forms.Label lblSair;
         private System.Windows.Forms.MenuStrip mspGeek;
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;

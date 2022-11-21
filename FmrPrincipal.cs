@@ -34,5 +34,17 @@ namespace Geek
             FrmCliente cliente = new FrmCliente();
             cliente.Show();
         }
+
+        private void pbxProduto_Click(object sender, EventArgs e)
+        {
+            FrmProduto produto = new FrmProduto();
+            produto.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            FrmProduto produto = new FrmProduto();
+            produto.Show();
+        }
     }
 }
