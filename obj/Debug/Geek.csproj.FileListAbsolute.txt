@@ -1,0 +1,14 @@
+C:\Geek\bin\Debug\DbGeek.mdf
+C:\Geek\bin\Debug\DbGeek_log.ldf
+C:\Geek\bin\Debug\Geek.exe.config
+C:\Geek\bin\Debug\Geek.exe
+C:\Geek\bin\Debug\Geek.pdb
+C:\Geek\obj\Debug\Geek.csproj.AssemblyReference.cache
+C:\Geek\obj\Debug\Geek.FrmPrincipal.resources
+C:\Geek\obj\Debug\Geek.FrmCliente.resources
+C:\Geek\obj\Debug\Geek.FrmLogin.resources
+C:\Geek\obj\Debug\Geek.Properties.Resources.resources
+C:\Geek\obj\Debug\Geek.csproj.GenerateResource.cache
+C:\Geek\obj\Debug\Geek.csproj.CoreCompileInputs.cache
+C:\Geek\obj\Debug\Geek.exe
+C:\Geek\obj\Debug\Geek.pdb
