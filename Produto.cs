@@ -16,7 +16,7 @@ namespace Geek
         public int quantidade { get; set; }
         public decimal preco { get; set; }
 
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Geek\DbGeek.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\CRUD-Geek\DbGeek.mdf;Integrated Security=True");
 
         public List<Produto> listaproduto()
         {

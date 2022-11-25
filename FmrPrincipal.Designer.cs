@@ -36,15 +36,16 @@ namespace Geek
             this.lblSair = new System.Windows.Forms.Label();
             this.mspGeek = new System.Windows.Forms.MenuStrip();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produtoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pedidoVendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pbxSair = new System.Windows.Forms.PictureBox();
             this.pbxVenda = new System.Windows.Forms.PictureBox();
             this.pbxProduto = new System.Windows.Forms.PictureBox();
             this.pbxCliente = new System.Windows.Forms.PictureBox();
+            this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mspGeek.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxVenda)).BeginInit();
@@ -83,6 +84,7 @@ namespace Geek
             this.lblVenda.Size = new System.Drawing.Size(53, 16);
             this.lblVenda.TabIndex = 6;
             this.lblVenda.Text = "Venda";
+            this.lblVenda.Click += new System.EventHandler(this.lblVenda_Click);
             // 
             // lblSair
             // 
@@ -115,20 +117,6 @@ namespace Geek
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.cadastroToolStripMenuItem.Text = "Cadastros";
             // 
-            // vendasToolStripMenuItem
-            // 
-            this.vendasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pedidoVendaToolStripMenuItem});
-            this.vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
-            this.vendasToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.vendasToolStripMenuItem.Text = "Vendas";
-            // 
-            // sairToolStripMenuItem
-            // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
-            this.sairToolStripMenuItem.Text = "Sair";
-            // 
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
@@ -142,11 +130,28 @@ namespace Geek
             this.produtoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.produtoToolStripMenuItem.Text = "Produto";
             // 
+            // vendasToolStripMenuItem
+            // 
+            this.vendasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pedidoVendaToolStripMenuItem});
+            this.vendasToolStripMenuItem.Name = "vendasToolStripMenuItem";
+            this.vendasToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.vendasToolStripMenuItem.Text = "Vendas";
+            // 
             // pedidoVendaToolStripMenuItem
             // 
             this.pedidoVendaToolStripMenuItem.Name = "pedidoVendaToolStripMenuItem";
             this.pedidoVendaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.pedidoVendaToolStripMenuItem.Text = "Pedido | Venda";
+            this.pedidoVendaToolStripMenuItem.Click += new System.EventHandler(this.pedidoVendaToolStripMenuItem_Click);
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fecharToolStripMenuItem});
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.sairToolStripMenuItem.Text = "Sair";
             // 
             // pbxSair
             // 
@@ -157,6 +162,7 @@ namespace Geek
             this.pbxSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxSair.TabIndex = 3;
             this.pbxSair.TabStop = false;
+            this.pbxSair.Click += new System.EventHandler(this.pbxSair_Click);
             // 
             // pbxVenda
             // 
@@ -167,6 +173,7 @@ namespace Geek
             this.pbxVenda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxVenda.TabIndex = 2;
             this.pbxVenda.TabStop = false;
+            this.pbxVenda.Click += new System.EventHandler(this.pbxVenda_Click);
             // 
             // pbxProduto
             // 
@@ -189,6 +196,13 @@ namespace Geek
             this.pbxCliente.TabIndex = 0;
             this.pbxCliente.TabStop = false;
             this.pbxCliente.Click += new System.EventHandler(this.pbxCliente_Click);
+            // 
+            // fecharToolStripMenuItem
+            // 
+            this.fecharToolStripMenuItem.Name = "fecharToolStripMenuItem";
+            this.fecharToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fecharToolStripMenuItem.Text = "Fechar";
+            this.fecharToolStripMenuItem.Click += new System.EventHandler(this.fecharToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -241,6 +255,7 @@ namespace Geek
         private System.Windows.Forms.ToolStripMenuItem vendasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pedidoVendaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fecharToolStripMenuItem;
     }
 }
 

@@ -63,9 +63,19 @@ namespace Geek.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cliente {
+        internal static System.Drawing.Bitmap cliente_png {
             get {
-                object obj = ResourceManager.GetObject("cliente", resourceCulture);
+                object obj = ResourceManager.GetObject("cliente_png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fechar {
+            get {
+                object obj = ResourceManager.GetObject("fechar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +93,9 @@ namespace Geek.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap produto {
+        internal static System.Drawing.Bitmap login_bg {
             get {
-                object obj = ResourceManager.GetObject("produto", resourceCulture);
+                object obj = ResourceManager.GetObject("login_bg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +103,9 @@ namespace Geek.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap sair {
+        internal static System.Drawing.Bitmap produto1 {
             get {
-                object obj = ResourceManager.GetObject("sair", resourceCulture);
+                object obj = ResourceManager.GetObject("produto1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +113,49 @@ namespace Geek.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap venda {
+        internal static System.Drawing.Bitmap venda1 {
             get {
-                object obj = ResourceManager.GetObject("venda", resourceCulture);
+                object obj = ResourceManager.GetObject("venda1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap videogame_bg1 {
+            get {
+                object obj = ResourceManager.GetObject("videogame_bg1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap videogame_bg2 {
+            get {
+                object obj = ResourceManager.GetObject("videogame_bg2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap videogame_bg3 {
+            get {
+                object obj = ResourceManager.GetObject("videogame_bg3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap videogame_bg4 {
+            get {
+                object obj = ResourceManager.GetObject("videogame_bg4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

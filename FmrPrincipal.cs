@@ -46,5 +46,43 @@ namespace Geek
             FrmProduto produto = new FrmProduto();
             produto.Show();
         }
+
+        private void pbxVenda_Click(object sender, EventArgs e)
+        {
+            FrmVenda venda = new FrmVenda();
+            venda.Show();
+        }
+
+        private void lblVenda_Click(object sender, EventArgs e)
+        {
+            FrmVenda venda = new FrmVenda();
+            venda.Show();
+        }
+
+        private void pedidoVendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmVenda venda = new FrmVenda();
+            venda.Show();
+        }
+
+        private void pbxSair_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = new DialogResult();
+            dialog = MessageBox.Show("Deseja realmente sair?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void fecharToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = new DialogResult();
+            dialog = MessageBox.Show("Deseja realmente sair?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

@@ -31,17 +31,17 @@ namespace Geek
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVenda));
             this.lblId = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtIdPedido = new System.Windows.Forms.TextBox();
+            this.cbxCliente = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbxProduto = new System.Windows.Forms.ComboBox();
             this.btnPedido = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtIdProduto = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtQuantidade = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtValor = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.lblQuantia = new System.Windows.Forms.Label();
             this.lblEstoque = new System.Windows.Forms.Label();
@@ -69,20 +69,20 @@ namespace Geek
             this.lblId.TabIndex = 0;
             this.lblId.Text = "ID Pedido | Venda";
             // 
-            // textBox1
+            // txtIdPedido
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(77, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtIdPedido.Location = new System.Drawing.Point(12, 46);
+            this.txtIdPedido.Name = "txtIdPedido";
+            this.txtIdPedido.Size = new System.Drawing.Size(77, 20);
+            this.txtIdPedido.TabIndex = 1;
             // 
-            // comboBox1
+            // cbxCliente
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 101);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(459, 21);
-            this.comboBox1.TabIndex = 2;
+            this.cbxCliente.FormattingEnabled = true;
+            this.cbxCliente.Location = new System.Drawing.Point(12, 101);
+            this.cbxCliente.Name = "cbxCliente";
+            this.cbxCliente.Size = new System.Drawing.Size(459, 21);
+            this.cbxCliente.TabIndex = 2;
             // 
             // label2
             // 
@@ -104,13 +104,14 @@ namespace Geek
             this.label3.TabIndex = 5;
             this.label3.Text = "Produto";
             // 
-            // comboBox2
+            // cbxProduto
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(12, 156);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(459, 21);
-            this.comboBox2.TabIndex = 4;
+            this.cbxProduto.FormattingEnabled = true;
+            this.cbxProduto.Location = new System.Drawing.Point(12, 156);
+            this.cbxProduto.Name = "cbxProduto";
+            this.cbxProduto.Size = new System.Drawing.Size(459, 21);
+            this.cbxProduto.TabIndex = 4;
+            this.cbxProduto.SelectedIndexChanged += new System.EventHandler(this.cbxProduto_SelectedIndexChanged);
             // 
             // btnPedido
             // 
@@ -123,13 +124,14 @@ namespace Geek
             this.btnPedido.TabIndex = 6;
             this.btnPedido.Text = "Novo Pedido";
             this.btnPedido.UseVisualStyleBackColor = true;
+            this.btnPedido.Click += new System.EventHandler(this.btnPedido_Click);
             // 
-            // textBox2
+            // txtIdProduto
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 233);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(77, 20);
-            this.textBox2.TabIndex = 8;
+            this.txtIdProduto.Location = new System.Drawing.Point(12, 233);
+            this.txtIdProduto.Name = "txtIdProduto";
+            this.txtIdProduto.Size = new System.Drawing.Size(77, 20);
+            this.txtIdProduto.TabIndex = 8;
             // 
             // label4
             // 
@@ -141,12 +143,12 @@ namespace Geek
             this.label4.TabIndex = 7;
             this.label4.Text = "ID Produto";
             // 
-            // textBox3
+            // txtQuantidade
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 289);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 20);
-            this.textBox3.TabIndex = 10;
+            this.txtQuantidade.Location = new System.Drawing.Point(12, 289);
+            this.txtQuantidade.Name = "txtQuantidade";
+            this.txtQuantidade.Size = new System.Drawing.Size(121, 20);
+            this.txtQuantidade.TabIndex = 10;
             // 
             // label5
             // 
@@ -158,12 +160,12 @@ namespace Geek
             this.label5.TabIndex = 9;
             this.label5.Text = "Quantidade";
             // 
-            // textBox4
+            // txtValor
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 345);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(104, 20);
-            this.textBox4.TabIndex = 12;
+            this.txtValor.Location = new System.Drawing.Point(12, 345);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(104, 20);
+            this.txtValor.TabIndex = 12;
             // 
             // label6
             // 
@@ -205,6 +207,7 @@ namespace Geek
             this.btnNovoItem.TabIndex = 15;
             this.btnNovoItem.Text = "Novo Item";
             this.btnNovoItem.UseVisualStyleBackColor = true;
+            this.btnNovoItem.Click += new System.EventHandler(this.btnNovoItem_Click);
             // 
             // btnEditar
             // 
@@ -217,6 +220,7 @@ namespace Geek
             this.btnEditar.TabIndex = 16;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnExcluir
             // 
@@ -229,6 +233,7 @@ namespace Geek
             this.btnExcluir.TabIndex = 17;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAtualizarPedido
             // 
@@ -241,6 +246,7 @@ namespace Geek
             this.btnAtualizarPedido.TabIndex = 18;
             this.btnAtualizarPedido.Text = "Atualizar Pedido";
             this.btnAtualizarPedido.UseVisualStyleBackColor = true;
+            this.btnAtualizarPedido.Click += new System.EventHandler(this.btnAtualizarPedido_Click);
             // 
             // dgvVenda
             // 
@@ -249,6 +255,7 @@ namespace Geek
             this.dgvVenda.Name = "dgvVenda";
             this.dgvVenda.Size = new System.Drawing.Size(595, 150);
             this.dgvVenda.TabIndex = 19;
+            this.dgvVenda.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVenda_CellClick);
             // 
             // btnFechar
             // 
@@ -262,6 +269,7 @@ namespace Geek
             this.btnFechar.TabIndex = 22;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // btnFinalizarVenda
             // 
@@ -273,6 +281,7 @@ namespace Geek
             this.btnFinalizarVenda.TabIndex = 21;
             this.btnFinalizarVenda.Text = "Finalizar Venda";
             this.btnFinalizarVenda.UseVisualStyleBackColor = true;
+            this.btnFinalizarVenda.Click += new System.EventHandler(this.btnFinalizarVenda_Click);
             // 
             // btnFinalizarPedido
             // 
@@ -285,6 +294,7 @@ namespace Geek
             this.btnFinalizarPedido.TabIndex = 20;
             this.btnFinalizarPedido.Text = "Finalizar Pedido";
             this.btnFinalizarPedido.UseVisualStyleBackColor = false;
+            this.btnFinalizarPedido.Click += new System.EventHandler(this.btnFinalizarPedido_Click);
             // 
             // txtTotal
             // 
@@ -313,6 +323,7 @@ namespace Geek
             this.btnLocalizar.TabIndex = 25;
             this.btnLocalizar.Text = "Localizar";
             this.btnLocalizar.UseVisualStyleBackColor = true;
+            this.btnLocalizar.Click += new System.EventHandler(this.btnLocalizar_Click);
             // 
             // FrmVenda
             // 
@@ -333,18 +344,18 @@ namespace Geek
             this.Controls.Add(this.btnNovoItem);
             this.Controls.Add(this.lblEstoque);
             this.Controls.Add(this.lblQuantia);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtValor);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtQuantidade);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtIdProduto);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnPedido);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbxProduto);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cbxCliente);
+            this.Controls.Add(this.txtIdPedido);
             this.Controls.Add(this.lblId);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -352,6 +363,7 @@ namespace Geek
             this.Name = "FrmVenda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmVenda";
+            this.Load += new System.EventHandler(this.FrmVenda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenda)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -361,17 +373,17 @@ namespace Geek
         #endregion
 
         private System.Windows.Forms.Label lblId;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtIdPedido;
+        private System.Windows.Forms.ComboBox cbxCliente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbxProduto;
         private System.Windows.Forms.Button btnPedido;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtIdProduto;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtQuantidade;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblQuantia;
         private System.Windows.Forms.Label lblEstoque;

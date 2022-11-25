@@ -53,7 +53,7 @@ namespace Geek
             // 
             this.btnLocalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLocalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLocalizar.Location = new System.Drawing.Point(147, 28);
+            this.btnLocalizar.Location = new System.Drawing.Point(135, 28);
             this.btnLocalizar.Name = "btnLocalizar";
             this.btnLocalizar.Size = new System.Drawing.Size(115, 41);
             this.btnLocalizar.TabIndex = 0;
@@ -65,7 +65,7 @@ namespace Geek
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(24, 28);
+            this.lblId.Location = new System.Drawing.Point(12, 28);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(24, 18);
             this.lblId.TabIndex = 1;
@@ -73,7 +73,7 @@ namespace Geek
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(27, 49);
+            this.txtId.Location = new System.Drawing.Point(15, 49);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 2;
@@ -91,7 +91,7 @@ namespace Geek
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(24, 85);
+            this.lblNome.Location = new System.Drawing.Point(12, 85);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(53, 18);
             this.lblNome.TabIndex = 4;
@@ -99,14 +99,14 @@ namespace Geek
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(27, 106);
+            this.txtNome.Location = new System.Drawing.Point(15, 106);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(235, 20);
             this.txtNome.TabIndex = 5;
             // 
             // txtCelular
             // 
-            this.txtCelular.Location = new System.Drawing.Point(27, 163);
+            this.txtCelular.Location = new System.Drawing.Point(15, 163);
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(145, 20);
             this.txtCelular.TabIndex = 7;
@@ -115,7 +115,7 @@ namespace Geek
             // 
             this.lblCelular.AutoSize = true;
             this.lblCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCelular.Location = new System.Drawing.Point(24, 142);
+            this.lblCelular.Location = new System.Drawing.Point(12, 142);
             this.lblCelular.Name = "lblCelular";
             this.lblCelular.Size = new System.Drawing.Size(61, 18);
             this.lblCelular.TabIndex = 6;
@@ -123,7 +123,7 @@ namespace Geek
             // 
             // txtCpf
             // 
-            this.txtCpf.Location = new System.Drawing.Point(268, 106);
+            this.txtCpf.Location = new System.Drawing.Point(256, 106);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(159, 20);
             this.txtCpf.TabIndex = 9;
@@ -132,7 +132,7 @@ namespace Geek
             // 
             this.lblCpf.AutoSize = true;
             this.lblCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCpf.Location = new System.Drawing.Point(265, 85);
+            this.lblCpf.Location = new System.Drawing.Point(253, 85);
             this.lblCpf.Name = "lblCpf";
             this.lblCpf.Size = new System.Drawing.Size(41, 18);
             this.lblCpf.TabIndex = 8;
@@ -140,7 +140,7 @@ namespace Geek
             // 
             // txtDataNascimento
             // 
-            this.txtDataNascimento.Location = new System.Drawing.Point(178, 163);
+            this.txtDataNascimento.Location = new System.Drawing.Point(166, 163);
             this.txtDataNascimento.Name = "txtDataNascimento";
             this.txtDataNascimento.Size = new System.Drawing.Size(158, 20);
             this.txtDataNascimento.TabIndex = 11;
@@ -149,7 +149,7 @@ namespace Geek
             // 
             this.lblDataNascimento.AutoSize = true;
             this.lblDataNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataNascimento.Location = new System.Drawing.Point(175, 142);
+            this.lblDataNascimento.Location = new System.Drawing.Point(163, 142);
             this.lblDataNascimento.Name = "lblDataNascimento";
             this.lblDataNascimento.Size = new System.Drawing.Size(161, 18);
             this.lblDataNascimento.TabIndex = 10;

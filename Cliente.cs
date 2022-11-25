@@ -15,7 +15,7 @@ namespace Geek
         public string data_nascimento { get; set; }
         public string celular { get; set; }
 
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Geek\DbGeek.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\CRUD-Geek\DbGeek.mdf;Integrated Security=True");
 
         public List<Cliente> listacliente()
         {

@@ -74,8 +74,8 @@ namespace Geek
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.Black;
             this.btnLogin.Location = new System.Drawing.Point(23, 142);
@@ -89,7 +89,7 @@ namespace Geek
             // lblCancelar
             // 
             this.lblCancelar.BackColor = System.Drawing.Color.Red;
-            this.lblCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lblCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCancelar.Location = new System.Drawing.Point(166, 142);
             this.lblCancelar.Name = "lblCancelar";
@@ -113,6 +113,7 @@ namespace Geek
             this.Controls.Add(this.lblUsuario);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";
             this.ResumeLayout(false);
             this.PerformLayout();
