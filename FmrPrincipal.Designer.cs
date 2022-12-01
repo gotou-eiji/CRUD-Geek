@@ -41,11 +41,11 @@ namespace Geek
             this.vendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pedidoVendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pbxSair = new System.Windows.Forms.PictureBox();
             this.pbxVenda = new System.Windows.Forms.PictureBox();
             this.pbxProduto = new System.Windows.Forms.PictureBox();
             this.pbxCliente = new System.Windows.Forms.PictureBox();
-            this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mspGeek.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxVenda)).BeginInit();
@@ -98,6 +98,7 @@ namespace Geek
             // 
             // mspGeek
             // 
+            this.mspGeek.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.mspGeek.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastroToolStripMenuItem,
             this.vendasToolStripMenuItem,
@@ -153,9 +154,17 @@ namespace Geek
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.sairToolStripMenuItem.Text = "Sair";
             // 
+            // fecharToolStripMenuItem
+            // 
+            this.fecharToolStripMenuItem.Name = "fecharToolStripMenuItem";
+            this.fecharToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.fecharToolStripMenuItem.Text = "Fechar";
+            this.fecharToolStripMenuItem.Click += new System.EventHandler(this.fecharToolStripMenuItem_Click);
+            // 
             // pbxSair
             // 
-            this.pbxSair.Image = global::Geek.Properties.Resources.sair;
+            this.pbxSair.BackColor = System.Drawing.Color.Transparent;
+            this.pbxSair.Image = global::Geek.Properties.Resources.fechar;
             this.pbxSair.Location = new System.Drawing.Point(884, 110);
             this.pbxSair.Name = "pbxSair";
             this.pbxSair.Size = new System.Drawing.Size(232, 241);
@@ -166,7 +175,8 @@ namespace Geek
             // 
             // pbxVenda
             // 
-            this.pbxVenda.Image = global::Geek.Properties.Resources.venda;
+            this.pbxVenda.BackColor = System.Drawing.Color.Transparent;
+            this.pbxVenda.Image = global::Geek.Properties.Resources.venda1;
             this.pbxVenda.Location = new System.Drawing.Point(605, 110);
             this.pbxVenda.Name = "pbxVenda";
             this.pbxVenda.Size = new System.Drawing.Size(232, 241);
@@ -177,7 +187,8 @@ namespace Geek
             // 
             // pbxProduto
             // 
-            this.pbxProduto.Image = global::Geek.Properties.Resources.produto;
+            this.pbxProduto.BackColor = System.Drawing.Color.Transparent;
+            this.pbxProduto.Image = global::Geek.Properties.Resources.produto1;
             this.pbxProduto.Location = new System.Drawing.Point(330, 110);
             this.pbxProduto.Name = "pbxProduto";
             this.pbxProduto.Size = new System.Drawing.Size(232, 241);
@@ -188,7 +199,8 @@ namespace Geek
             // 
             // pbxCliente
             // 
-            this.pbxCliente.Image = global::Geek.Properties.Resources.cliente;
+            this.pbxCliente.BackColor = System.Drawing.Color.Transparent;
+            this.pbxCliente.Image = global::Geek.Properties.Resources.cliente_png;
             this.pbxCliente.Location = new System.Drawing.Point(49, 110);
             this.pbxCliente.Name = "pbxCliente";
             this.pbxCliente.Size = new System.Drawing.Size(232, 241);
@@ -197,18 +209,13 @@ namespace Geek
             this.pbxCliente.TabStop = false;
             this.pbxCliente.Click += new System.EventHandler(this.pbxCliente_Click);
             // 
-            // fecharToolStripMenuItem
-            // 
-            this.fecharToolStripMenuItem.Name = "fecharToolStripMenuItem";
-            this.fecharToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fecharToolStripMenuItem.Text = "Fechar";
-            this.fecharToolStripMenuItem.Click += new System.EventHandler(this.fecharToolStripMenuItem_Click);
-            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::Geek.Properties.Resources.videogame_bg1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1185, 510);
             this.Controls.Add(this.lblSair);
             this.Controls.Add(this.lblVenda);

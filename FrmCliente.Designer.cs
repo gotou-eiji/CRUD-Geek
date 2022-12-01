@@ -213,6 +213,8 @@ namespace Geek
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::Geek.Properties.Resources.videogame_bg2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(627, 516);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnExcluir);
