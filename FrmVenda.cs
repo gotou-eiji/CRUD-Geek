@@ -13,7 +13,7 @@ namespace Geek
 {
     public partial class FrmVenda : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\CRUD-Geek\DbGeek.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Senai CTM\CRUD-Geek-teste\DbGeek.mdf"";Integrated Security=True");
         public FrmVenda()
         {
             InitializeComponent();

@@ -46,7 +46,7 @@ namespace Geek
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.Location = new System.Drawing.Point(20, 30);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(62, 16);
+            this.lblUsuario.Size = new System.Drawing.Size(61, 16);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuário";
             // 
@@ -61,6 +61,7 @@ namespace Geek
             // 
             this.txtSenha.Location = new System.Drawing.Point(23, 96);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(209, 20);
             this.txtSenha.TabIndex = 3;
             // 
@@ -70,7 +71,7 @@ namespace Geek
             this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSenha.Location = new System.Drawing.Point(20, 77);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(52, 16);
+            this.lblSenha.Size = new System.Drawing.Size(51, 16);
             this.lblSenha.TabIndex = 2;
             this.lblSenha.Text = "Senha";
             // 

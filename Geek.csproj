@@ -158,13 +158,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DbGeek.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DbGeek_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DbGeek.mdf</DependentUpon>
-    </Content>
     <None Include="Resources\videogame-bg4.png" />
     <None Include="Resources\fechar.png" />
     <None Include="Resources\venda.png" />
@@ -176,6 +169,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Outros\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DbGeek.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DbGeek_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DbGeek.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,3 +28,20 @@ C:\CRUD-Geek\obj\Debug\Geek.csproj.GenerateResource.cache
 C:\CRUD-Geek\obj\Debug\Geek.csproj.CoreCompileInputs.cache
 C:\CRUD-Geek\obj\Debug\Geek.exe
 C:\CRUD-Geek\obj\Debug\Geek.pdb
+C:\Senai CTM\CRUD-Geek-teste\bin\Debug\DbGeek.mdf
+C:\Senai CTM\CRUD-Geek-teste\bin\Debug\DbGeek_log.ldf
+C:\Senai CTM\CRUD-Geek-teste\bin\Debug\Geek.exe.config
+C:\Senai CTM\CRUD-Geek-teste\bin\Debug\Geek.exe
+C:\Senai CTM\CRUD-Geek-teste\bin\Debug\Geek.pdb
+C:\Senai CTM\CRUD-Geek-teste\obj\Debug\Geek.csproj.AssemblyReference.cache
+C:\Senai CTM\CRUD-Geek-teste\obj\Debug\Geek.csproj.SuggestedBindingRedirects.cache
+C:\Senai CTM\CRUD-Geek-teste\obj\Debug\Geek.FrmPrincipal.resources
+C:\Senai CTM\CRUD-Geek-teste\obj\Debug\Geek.FrmCliente.resources
+C:\Senai CTM\CRUD-Geek-teste\obj\Debug\Geek.FrmLogin.resources
+C:\Senai CTM\CRUD-Geek-teste\obj\Debug\Geek.FrmProduto.resources
+C:\Senai CTM\CRUD-Geek-teste\obj\Debug\Geek.FrmVenda.resources
+C:\Senai CTM\CRUD-Geek-teste\obj\Debug\Geek.Properties.Resources.resources
+C:\Senai CTM\CRUD-Geek-teste\obj\Debug\Geek.csproj.GenerateResource.cache
+C:\Senai CTM\CRUD-Geek-teste\obj\Debug\Geek.csproj.CoreCompileInputs.cache
+C:\Senai CTM\CRUD-Geek-teste\obj\Debug\Geek.exe
+C:\Senai CTM\CRUD-Geek-teste\obj\Debug\Geek.pdb

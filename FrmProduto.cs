@@ -67,7 +67,6 @@ namespace Geek
                         txtQuantidade.Text = "";
                         txtPreco.Text = "";
                         this.txtNome.Focus();
-
                     }
                     else
                     {
@@ -86,7 +85,7 @@ namespace Geek
             }
             catch (Exception er)
             {
-                MessageBox.Show(er.Message, "Erro!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(er.Message, "Erro ao tentar inserir um produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -112,7 +111,7 @@ namespace Geek
             }
             catch (Exception er)
             {
-                MessageBox.Show(er.Message, "Erro!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(er.Message, "Erro ao tentar editar um produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -137,7 +136,7 @@ namespace Geek
             }
             catch (Exception er)
             {
-                MessageBox.Show(er.Message, "Erro!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(er.Message, "Erro ao tentar excluir um produto!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
